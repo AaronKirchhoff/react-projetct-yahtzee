@@ -83,7 +83,8 @@ class SmallStraight extends Rule {
 }
 
 /** Check for large straights. */
-// extends the base abstract Rule class, thats why we dont need constructor in each of our classes below
+// extends the base abstract Rule class, thats why we dont need constructor in each of our classes below,
+// what is a large straight? 5 unique dice in a row that are not the same. so a Set object will be an array that looks like.. [1,1,1,1,1]
 class LargeStraight extends Rule {
   evalRoll = dice => {
     const d = new Set(dice);
